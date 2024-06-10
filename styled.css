@@ -27,11 +27,19 @@ header .h1_nome{
     align-items: center;
    
 }
+.section_objetivo{
+    padding: 20px;
+    
+}
 .section_resumo{
     padding: 20px;
 }
 .dados_perfil{
     display: flex;
+   padding: 10px;
+}
+.div_espaco{
+    padding-right: 10px;
 }
 .h1_skill{
     padding: 10px;
