@@ -73,6 +73,9 @@ header .h1_nome{
     padding: 20px;
 }
 
+.div_resumo{
+    padding: 10px;
+}
 
 @media screen and (min-width: 375px ) and (max-width: 566px) {
     header .dados_perfil{
