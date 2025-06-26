@@ -5,161 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currículo de Adryel</title>
     <link rel="stylesheet" href="styled.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   </head>
+  
   <body>
-    <header class="header">
-      <div class="container">
-        <h1 class="header__name">Adryel Martins da Silva</h1>
-        <div class="header__profile">
-          <p><strong>Bairro:</strong> Parque São José</p>
-          <p><strong>Cidade:</strong> Fortaleza - CE</p>
-          <p><strong>Contato:</strong> +55 85 98416-6186</p>
-          <p><strong>E-mail:</strong> adryelmartinss1@gmail.com</p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/adryel-martins-b01544249/">Perfil no LinkedIn</a></p>
-          <p><strong>GitHub:</strong> <a href="https://github.com/adryeldeev">Perfil no GitHub</a></p>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section class="section">
-        <h2 class="section__title">Objetivo Profissional</h2>
-        <ul class="section__list">
-          <li>Estágio em TI</li>
-          <li>Desenvolvedor Full Stack React & Node JS</li>
+    <div class="content">
+      <nav>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#objetivo-profissional">Objetivo Profissional</a></li>
+          <li class="nav__item"><a href="#resumo">Resumo</a></li>
+          <li class="nav__item"><a href="#skills">Skills</a></li>
+          <li class="nav__item"><a href="#projetos">Projetos</a></li>
+          <li class="nav__item"><a href="#experiencias">Experiências</a></li>
+          <li class="nav__item"><a href="#formacao">Formação</a></li>
+          <li class="nav__item"><a href="#contato">Contato</a></li>
         </ul>
-      </section>
+      </nav>
 
-      <section class="section">
-        <h2 class="section__title">Resumo</h2>
-        <p>
-         Desenvolvedor web focado em resolver demandas reais de negócio com soluções digitais como landing pages, sistemas e integrações. Tenho visão técnica e comercial para adaptar o projeto à real necessidade do cliente.
-        </p>
-      </section>
-
-      <section class="section">
-        <h2 class="section__title">Skills</h2>
-        <ul class="section__list">
-          <li>JavaScript | NodeJS | Express | Git | SQL | Prisma | React JS | Styled-components | Docker Compose</li>
-          <li>HTML | CSS</li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <h2 class="section__title">Projetos</h2>
-        <div class="project">
-        <strong>Sistema completo para loja de veículos seminovos – Felipe Carneiro Motors [06/2025]</strong>
-<div class="div_experiencias">
-  <ul>
-    <li><span>Projeto desenvolvido como freelancer para loja de veículos seminovos, com landing page para captação de leads e painel administrativo para gestão de anúncios.</span></li>
-    <li><span>Back-end desenvolvido com Node.js, Express, MySQL e Prisma ORM, com autenticação de usuários administradores via JWT e envio de e-mails.</span></li>
-    <li><span>Front-end responsivo criado com Vite.js, React, TypeScript e Styled Components, integrando WhatsApp para contato direto e iframe do Google Maps para localização da loja.</span></li>
-    <li><span>Funcionalidades incluem cadastro, edição e publicação em tempo real de veículos com upload de fotos, filtro por marca e nome, além de gestão eficiente dos anúncios.</span></li>
-    <li>
-      <a href="https://felipecarneiromotors.com.br/" target="_blank" rel="noopener noreferrer">
-        Ver projeto
-      </a>
-    </li>
-  </ul>
-</div>
-          <strong>Sistema de Controle de Solicitações DPVAT – 4S Seguros [01/04/2025]</strong>
-          <div class="div_experiencias">
-            <ul>
-              <li><span>Projeto desenvolvido como freelancer para empresa que atua na consulta e solicitação do seguro DPVAT.</span></li>
-              <li><span>Back-end com Node.js, Express, MySQL, Prisma, Axios e autenticação JWT.</span></li>
-              <li><span>Front-end com React.js, Context API, Styled-components, React Hooks, React Router, sweetalert2 e 100% responsivo.</span></li>
-              <li><span>O sistema permite o controle de atendimentos, cadastro de clientes e acompanhamento das solicitações de seguro.</span></li>
-              <li>
-                <a href="https://pjsegurowebfront.vercel.app/" target="_blank" rel="noopener noreferrer" >
-                  Ver projeto
-                </a>
-              </li>
-            </ul>
+      <header>
+        <div class="sobre__Content">
+          <div class="sobre__text">
+            <h1>Oi, eu sou Adryel</h1>
+            <p>
+              Profissional com sólida experiência no desenvolvimento de softwares personalizados, com foco em qualidade, performance e usabilidade. Capaz de planejar e implementar soluções tecnológicas completas, desde a análise até os testes finais. Hábil na aplicação de metodologias ágeis como Scrum e Kanban para garantir entregas eficientes e alinhadas com as necessidades do cliente.
+            </p>
+          </div>
+          <div class="sobre__img">
+            <img src="./image0.jpeg" alt="Adryel" />
+          </div>
         </div>
-        <div class="project">
-          <strong>Sistema de Gestão para Salão / Barbearia [26/07/2024]</strong>
-          <div class="div_experiencias">
-            <ul>
-              <li>
-                <span><strong>Trabalho Freelancer</strong> – Sistema de gestão desenvolvido para salões de beleza e barbearias.</span>
-              </li>
-              <li>
-                <span>Back-end com <strong>Node.js</strong>, <strong>Express</strong>, <strong>MySQL</strong>, <strong>Prisma ORM</strong>, <strong>Axios</strong>, <strong>Nodemon</strong> e autenticação com <strong>JWT</strong>.</span>
-              </li>
-              <li>
-                <span>Front-end utilizando <strong>React.js</strong>, <strong>Context API</strong>, <strong>React Hooks</strong>, <strong>React Toastify</strong>, <strong>Styled-components</strong>, <strong>React Router</strong> e integração com autenticação via <strong>JWT</strong>.</span>
-              </li>
-              <li>
-                <span>O sistema oferece controle em tempo real das operações do salão, auxiliando na organização de agendamentos, gerenciamento de clientes e otimização do fluxo de atendimento.</span>
-              </li>
-              <li>
-                <a href="https://adryeldeev.github.io/SistemaDeGestao/" target="_blank" rel="noopener noreferrer">
-                Ver projeto
-                </a>
-              </li>
-            </ul>
-        </div>
-        </div>
-        <div class="project">
-          <strong>Landing Page Airbnb</strong>
-          <div class="div_experiencias">
-            <ul>
-              <li>
-                <span><strong>Projeto dinâmico e responsivo</strong>, desenvolvido com foco em investidores interessados em gerar receita com imóveis via Airbnb.</span>
-              </li>
-              <li>
-                <span>Funcionalidade de consulta de valores e estimativas de ganhos em tempo real, com interface interativa.</span>
-              </li>
-              <li>
-                <span>Construído com <strong>React.js</strong>, utilizando <strong>useState</strong>, <strong>Props</strong> e <strong>React Hooks</strong> para gerenciar estados e componentes.</span>
-              </li>
-              <li>
-                <span>Design 100% responsivo, otimizando a experiência de navegação em todos os dispositivos.</span>
-              </li>
-              <li>
-                <a href="https://adryeldeev.github.io/landingpageairbnb/" target="_blank" rel="noopener noreferrer" >
-                 Ver projeto
-                </a>
-              </li>
-            </ul>
-        </div>
-        </div>
-        <div class="project">
-        <strong>Projeto Hotel – Sistema de Viagens</strong>
-<div class="div_experiencias">
-  <ul>
-    <li>
-      <span><strong>Plataforma de busca de pacotes de viagens</strong> com informações atualizadas em tempo real para usuários interessados em destinos turísticos.</span>
-    </li>
-    <li>
-      <span>Aplicação desenvolvida com <strong>React.js</strong>, utilizando <strong>React Hooks</strong>, <strong>Props</strong> e <strong>Styled-components</strong> para uma interface modular e adaptável.</span>
-    </li>
-    <li>
-      <span>Foco na <strong>organização dos componentes e estrutura de páginas</strong>, visando clareza no código e facilidade de manutenção.</span>
-    </li>
-    <li>
-      <span>Interface responsiva, com experiência fluida em dispositivos móveis e desktop.</span>
-    </li>
-    <li>
-      <a href="https://adryeldeev.github.io/projecthotel/" target="_blank" rel="noopener noreferrer" >
-        Ver projeto
-      </a>
-    </li>
-  </ul>
+      </header>
+      
+      <main>
+        <section id="skills" class="skills-section">
+                   <div class="soft-skills-grid">
+  <div class="soft-skills-text">
+    <h3>Soft Skills</h3>
+    <p>Também tenho facilidade em:</p>
+    <ul>
+      <li>Reestruturar códigos legados com clareza</li>
+      <li>Realizar análise e identificar falhas em sistemas</li>
+      <li>Ensinar clientes a utilizar sistemas com eficiência</li>
+      <li>Aprender rapidamente novas tecnologias</li>
+      <li>Trabalhar em equipe com boa comunicação</li>
+      <li>Aceitar feedbacks para evolução contínua</li>
+    </ul>
   </div>
-        </div>
-       
+  <div class="soft-skills-image">
+<lottie-player
+  src="./Animation.json"
+  background="transparent"
+  speed="1"
+  style="width: 300px; height: 300px;"
+  loop
+  autoplay>
+</lottie-player>
+</div>
+  <div class="hard-skill">
 
-        <!-- Adicione outros projetos aqui -->
-      </section>
-
-      <section class="section">
-        <h2 class="section__title">Educação</h2>
-        <ul class="section__list">
-          <li>Análise e Desenvolvimento de Sistemas - Descomplica (03/2022 - 11/2024)</li>
-          <li>Geração Tech - Desenvolvedor Full Stack (10/09/2024 - 22/11/2024)</li>
-        </ul>
-      </section>
-    </main>
+    <h2>Hard skills</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><i class="devicon-html5-plain colored"></i><p>HTML</p></div>
+        <div class="swiper-slide"><i class="devicon-css3-plain colored"></i><p>CSS</p></div>
+        <div class="swiper-slide"><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
+        <div class="swiper-slide"><i class="devicon-react-original colored"></i><p>React</p></div>
+        <div class="swiper-slide"><i class="devicon-nodejs-plain colored"></i><p>Node.js</p></div>
+        <div class="swiper-slide"><i class="devicon-tailwindcss-plain colored"></i><p>Tailwind</p></div>
+        <div class="swiper-slide"><i class="devicon-typescript-plain colored"></i><p>TypeScript</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+        </section>
+        
+      </main>
+    </div>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+      const swiper = new Swiper('.mySwiper', {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          1024: { slidesPerView: 4 },
+          768: { slidesPerView: 3 },
+          480: { slidesPerView: 2 },
+          0: { slidesPerView: 1 },
+        },
+      });
+      
+      </script>
   </body>
-</html>
+  </html>
+  
