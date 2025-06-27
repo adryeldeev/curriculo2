@@ -7,17 +7,24 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color:  #f4f4f4;
-  color: #333;
-  line-height: 1.6;
-}
+      font-family: 'Inter', sans-serif;
+        background: linear-gradient(to bottom, #0d1b2a, #1b263b);
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
 .content{
   width: auto;
   padding: 20px;
 }
 
-
+h2{
+   color: #f39c12;
+}
+h3{
+  font-size: 1.5rem;
+   color: #00bcd4;
+  margin-bottom: 10px;
+}
 nav{
  background: rgba(255, 255, 255, 0.1); /* transparência */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* sombra leve */
@@ -62,12 +69,49 @@ header{
 
 }
 
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: #f39c12;
+  color: #1a1a2e;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #e89d10;
+}
+
+.btn-primary .icon {
+  width: 20px;
+  height: 20px;
+}
+  
+
 .sobre__Content{
   max-width: 1200px;
   margin: auto;
   padding: 20px;
   display: flex;
   gap:20px;
+}
+.sobre__text h1{
+   font-size: 2rem;
+      color: #f39c12;
+      margin-bottom: 20px;
+}
+.hard-skill h2{
+  font-size: 1.5rem;
+  color: #f39c12;
+  margin-bottom: 10px;
 }
 .sobre__Content img{
   width: 150px;
@@ -97,10 +141,11 @@ header{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: white;
-  border-radius: 12px;
+   background: #1e2a3a;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
 }
 
@@ -137,6 +182,7 @@ header{
 .soft-skills-text h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  color: #f39c12;
 }
 
 .soft-skills-text ul {
@@ -155,4 +201,125 @@ header{
 .soft-skills-image img {
   max-width: 100%;
   height: auto;
+}
+
+.projects-section{
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  
+}
+.project-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-item{
+   background: #1e2a3a;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  width: calc(33.333% - 20px);
+  
+  transition: transform 0.3s ease;
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-item img{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+
+}
+
+.experience-section{
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+.experience-list{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.experience-item{
+    background: #1e2a3a;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  width: calc(50% - 20px);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.education-section{
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+.education-list{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.education-item{
+      background: #1e2a3a;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  width: calc(50% - 20px);
+  margin: 10px;
+    display: flex;
+  flex-direction: column;
+}
+
+.contact-section{
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.contato-list{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.contato-item{
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  
+}
+.contato-item-text{
+  display: flex;
+  flex-direction: column;
+}
+.contato-item img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
 }
