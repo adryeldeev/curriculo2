@@ -1,321 +1,545 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-      font-family: 'Inter', sans-serif;
-        background: linear-gradient(to bottom, #0d1b2a, #1b263b);
-      color: #f5f5f5;
-      line-height: 1.6;
-    }
-.content{
-  width: auto;
-  padding: 20px;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to bottom, #0d1b2a, #1b263b);
+    color: #f5f5f5;
+    line-height: 1.6;
 }
 
-h2{
-   color: #f39c12;
-}
-h3{
-  font-size: 1.5rem;
-   color: #00bcd4;
-  margin-bottom: 10px;
-}
-nav{
- background: rgba(255, 255, 255, 0.1); /* transparência */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* sombra leve */
-  backdrop-filter: blur(10px); /* desfoque de fundo */
-  -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
-  color: white;
-  padding: 10px;
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-  border-radius: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.2); /* borda leve */
-
+.content {
+    width: auto;
+    padding: 20px;
 }
 
-.nav__list{
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  
+h2 {
+    color: #f39c12;
 }
 
-.nav__item{
-color: white;
-  text-decoration: none;
-  font-weight: 700;
+h3 {
+    font-size: 1.5rem;
+    color: #00bcd4;
+    margin-bottom: 10px;
 }
 
-.nav__item a{
-  color: inherit;
-  text-decoration: none;
-  transition: color 0.3s ease;
+nav {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    padding: 10px 20px; /* Ajuste o padding para dar mais espaço nas laterais */
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; /* Alinha logo à esquerda e menu à direita */
+    align-items: center; /* Centraliza verticalmente os itens */
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative; /* Necessário para posicionar o menu responsivo */
 }
-.nav__item a:hover{
-  color: #ccc; /* cor de destaque ao passar o mouse */
-}
-header{
-  text-align: start;
-  margin-top: 40px;
-  width:100%;
 
+.nav__logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #f39c12; /* Cor do seu logo/nome */
+    text-decoration: none;
+    padding-left: 10px; /* Espaço para o logo */
+}
+
+.nav__toggle {
+    display: none; /* Esconde o botão de hambúrguer por padrão em telas grandes */
+    background: none;
+    border: none;
+    font-size: 1.8rem; /* Tamanho do ícone */
+    color: #f5f5f5;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001; /* Garante que fique acima de outros elementos */
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+    padding: 5px 0; /* Adiciona um pouco de padding para área de clique */
+}
+
+.nav__item a:hover {
+    color: #ccc;
+}
+
+
+
+header {
+    text-align: start;
+    margin-top: 40px;
+    width: 100%;
 }
 
 .btn-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 20px;
-  background-color: #f39c12;
-  color: #1a1a2e;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  transition: background-color 0.3s;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
 }
 
 .btn-primary:hover {
-  background-color: #e89d10;
+    background-color: #e89d10;
 }
 
 .btn-primary .icon {
-  width: 20px;
-  height: 20px;
-}
-  
-
-.sobre__Content{
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-  display: flex;
-  gap:20px;
-}
-.sobre__text h1{
-   font-size: 2rem;
-      color: #f39c12;
-      margin-bottom: 20px;
-}
-.hard-skill h2{
-  font-size: 1.5rem;
-  color: #f39c12;
-  margin-bottom: 10px;
-}
-.sobre__Content img{
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
+    width: 20px;
+    height: 20px;
 }
 
-.skills-section{
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding: 20px;
-  width: auto;
-  max-width: 1200px;
-}
-.swiper {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  padding-bottom: 30px;
+.sobre__Content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
 }
 
-.swiper-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-   background: #1e2a3a;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  padding: 20px;
-  transition: transform 0.3s ease;
+.sobre__text h1 {
+    font-size: 2rem;
+    color: #f39c12;
+    margin-bottom: 20px;
 }
 
-.swiper-slide i {
-  font-size: 48px;
-  margin-bottom: 10px;
-  align-items: center;
-
+/* Removido o h2 de hard-skill daqui e movido para a seção hard-skill */
+.sobre__Content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
 }
-.swiper-slide:hover {
-  transform: translateY(-10px);
+.objective-section{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.summary-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+/* --- Seção de Habilidades (Skills) --- */
+.skills-section {
+    margin: auto;
+    display: flex;
+    flex-direction: column; /* Empilha soft skills e hard skills verticalmente */
+    align-items: center; /* Centraliza o conteúdo dentro da seção */
+    padding: 20px;
+    width: auto;
+    max-width: 1200px; /* Alinha com o resto do conteúdo */
 }
 
-.swiper-slide p {
-  font-weight: 600;
-  font-size: 14px;
-}
-
+/* Soft Skills Grid */
 .soft-skills-grid {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  justify-content: center;
-  margin: 50px auto;
-  padding: 30px;
-  border-radius: 16px;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto; /* Mantém a margem para separar da seção anterior */
+    padding: 30px;
+    border-radius: 16px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%; /* Garante que o grid ocupe a largura disponível */
+    max-width: 1000px; /* Limite a largura para um melhor layout */
 }
 
 .soft-skills-text {
-  flex: 1 1 400px;
+    flex: 1 1 400px;
 }
 
 .soft-skills-text h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #f39c12;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f39c12;
 }
 
 .soft-skills-text ul {
-  list-style: disc inside;
-  padding-left: 0;
-  line-height: 1.6;
+    list-style: disc inside;
+    padding-left: 0;
+    line-height: 1.6;
 }
 
 .soft-skills-image {
-  flex: 1 1 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .soft-skills-image img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
-.projects-section{
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-  
-}
-.project-list{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+/* Hard Skills Section */
+.hard-skill {
+    width: 100%; /* Ocupa a largura total da skills-section */
+    max-width: 1000px; /* Alinha com a largura máxima do swiper */
+    margin-top: 40px; /* Espaçamento entre soft skills e hard skills */
+    text-align: left; /* Garante que o título Hard skills esteja alinhado */
+    padding: 0 20px; /* Adiciona um padding para o título não colar nas bordas */
+    box-sizing: border-box; /* Inclui padding na largura total */
 }
 
-.project-item{
-   background: #1e2a3a;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  border-radius: 12px;
-  padding: 20px;
-  width: calc(33.333% - 20px);
-  
-  transition: transform 0.3s ease;
-  display: flex ;
-  flex-direction: column;
-  align-items: center;
+.hard-skill h2 {
+    font-size: 1.5rem;
+    color: #f39c12;
+    margin-bottom: 20px; /* Espaçamento abaixo do título Hard skills */
+    text-align: left; /* Garante que o texto esteja alinhado à esquerda */
 }
 
-.project-item img{
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-
+/* Swiper (Hard Skills Slider) */
+.swiper {
+    width: 100%; /* Ocupa 100% do hard-skill container */
+    max-width: 1000px; /* Pode ser ajustado para alinhar com o design */
+    margin: 0 auto; /* Centraliza o swiper dentro do hard-skill */
+    padding-bottom: 30px; /* Espaço para a paginação do swiper */
 }
 
-.experience-section{
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-}
-.experience-list{
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-.experience-item{
-    background: #1e2a3a;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  border-radius: 12px;
-  padding: 20px;
-  width: calc(50% - 20px);
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-.education-section{
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-}
-.education-list{
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-.education-item{
-      background: #1e2a3a;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  border-radius: 12px;
-  padding: 20px;
-  width: calc(50% - 20px);
-  margin: 10px;
+.swiper-slide {
     display: flex;
-  flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #1e2a3a;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    /* Remover 'width: 100%;' daqui, o Swiper gerencia a largura do slide */
 }
 
-.contact-section {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
+.swiper-slide i {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #f39c12; /* Adicione uma cor para os ícones */
 }
+
+.swiper-slide p {
+    font-weight: 600;
+    font-size: 16px; /* Aumente um pouco o tamanho da fonte para melhor legibilidade */
+    color: #f5f5f5;
+}
+
+.swiper-slide:hover {
+    transform: translateY(-10px);
+}
+
+/* Ajustes para a paginação e navegação do Swiper */
+.swiper-pagination-bullet {
+    background-color: #f39c12 !important; /* Cor da paginação */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #f39c12 !important; /* Cor dos botões de navegação */
+}
+
+/* --- Seção de Projetos --- */
+.projects-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-item {
+    background: #1e2a3a;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: calc(33.333% - 20px);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* --- Seção de Experiência --- */
+.experience-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.experience-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os itens */
+}
+
+.experience-item {
+    background: #1e2a3a;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: calc(50% - 20px); /* Ajustado para 2 colunas */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-item a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    background-color: #f39c12;
+    padding: 10px;
+    border-radius: 8px;
+    width: 120px; /* Ajuste a largura do botão se necessário */
+    text-align: center;
+    margin-top: auto; /* Empurra o botão para baixo */
+}
+
+/* --- Seção de Educação --- */
+.education-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.education-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os itens */
+}
+
+.education-item {
+    background: #1e2a3a;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: calc(50% - 20px); /* Ajustado para 2 colunas */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Seção de Contato --- */
+.contact-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
 .contact-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background: #1e2a3a;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  border-radius: 12px;
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #1e2a3a;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-list h2 {
+    margin-bottom: 10px; /* Espaçamento abaixo do título de contato */
 }
 
 .contact-list a {
-  color: #f39c12;
-  text-decoration: none;
-  transition: color 0.3s ease;
+    color: #f39c12;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.experience-item a{
-color: white;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  background-color: #f39c12;
-  padding: 10px;
-  border-radius: 8px;
-  width: 100px;
+
+/* --- Media Query para Telas Menores (max-width: 768px) --- */
+@media (max-width: 768px) {
+    /* Esconde a lista de navegação padrão em telas pequenas */
+    .nav__list {
+        display: none;
+        flex-direction: column; /* Empilha os itens verticalmente */
+        position: absolute;
+        top: 100%; /* Abaixo da barra de navegação */
+        left: 0;
+        width: 100%;
+        background: rgba(27, 38, 59, 0.95); /* Fundo do menu aberto, um pouco mais opaco */
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        padding: 20px 0;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        z-index: 1000; /* Garante que o menu flutue sobre o conteúdo */
+        opacity: 0; /* Inicia invisível */
+        visibility: hidden; /* Inicia não-interagível */
+        transform: translateY(-20px); /* Começa um pouco acima */
+        transition: opacity 0.3s ease-out, transform 0.3s ease-out, visibility 0.3s ease-out;
+    }
+
+    /* Mostra a lista de navegação quando a classe 'nav__list--active' está presente */
+    .nav__list.nav__list--active {
+        display: flex; /* Mostra o menu */
+        opacity: 1; /* Torna visível */
+        visibility: visible; /* Torna interagível */
+        transform: translateY(0); /* Desliza para a posição normal */
+    }
+
+    .nav__item {
+        width: 100%; /* Ocupa a largura total do menu */
+        text-align: center; /* Centraliza o texto do item */
+        padding: 10px 0; /* Espaçamento vertical para cada item */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Separador entre itens */
+    }
+
+    .nav__item:last-child {
+        border-bottom: none; /* Remove a borda do último item */
+    }
+
+    .nav__item a {
+        display: block; /* Faz o link ocupar a largura total do item */
+        padding: 10px 20px; /* Aumenta a área de clique */
+    }
+
+    /* Mostra o botão de hambúrguer */
+    .nav__toggle {
+        display: block; /* Exibe o botão de hambúrguer */
+    }
+
+    /* A barra de navegação em si, quando o menu está fechado */
+    nav {
+        justify-content: space-between; /* Alinha logo à esquerda e hambúrguer à direita */
+        padding: 10px 20px; /* Padding para a barra principal */
+    }
+    /* Ajusta o logo para não ocupar muito espaço */
+    .nav__logo {
+        font-size: 1.2rem; /* Reduz o tamanho do logo */
+        padding-left: 0; /* Remove o padding à esquerda */
+    }
+    /* Ajusta o header para telas pequenas */
+    header {
+        text-align: center; /* Centraliza o texto do header */
+        margin-top: 20px; /* Reduz o espaço acima do header */
+    }
+    /* Ajusta o tamanho da imagem do perfil */
+    .sobre__Content img {
+        width: 120px; /* Reduz o tamanho da imagem do perfil */
+        height: 120px; /* Mantém a proporção */
+    }
+
+    /* Outros estilos de media query existentes (mantidos do seu código) */
+    .sobre__Content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Soft Skills Grid */
+    .soft-skills-grid {
+        flex-direction: column !important;
+        gap: 20px;
+        padding: 20px;
+        flex-wrap: nowrap;
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .soft-skills-text,
+    .soft-skills-image {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .soft-skills-text ul {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    /* Skills Section (pai de soft-skills-grid e hard-skill) */
+    .skills-section {
+        align-items: center;
+        padding: 0;
+    }
+
+    /* Hard Skills Section */
+    .hard-skill {
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 30px;
+        box-sizing: border-box;
+    }
+
+    .hard-skill h2 {
+        text-align: left;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    /* Swiper (Hard Skills Slider) */
+    .swiper {
+        width: 100%;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .swiper-slide {
+        padding: 20px;
+    }
+
+    /* Projetos */
+    .project-item {
+        width: calc(100% - 20px);
+    }
+
+    /* Experiências e Educação */
+    .experience-item,
+    .education-item {
+        width: calc(100% - 20px);
+    }
+
+    .experience-list,
+    .education-list {
+        flex-direction: column;
+        align-items: center;
+    }
 }
