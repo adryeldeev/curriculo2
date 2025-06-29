@@ -49,7 +49,7 @@ nav{
 }
 
 .nav__item{
-color:#333;
+color: white;
   text-decoration: none;
   font-weight: 700;
 }
@@ -286,40 +286,36 @@ header{
   flex-direction: column;
 }
 
-.contact-section{
+.contact-section {
   max-width: 1200px;
   margin: auto;
   padding: 20px;
-  text-align: center;
 }
-
-.contato-list{
+.contact-list {
   list-style: none;
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-.contato-item{
-  background: white;
+  gap: 10px;
+  background: #1e2a3a;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 12px;
-  padding: 20px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  display: flex;
-  justify-content: space-between;
-  
 }
-.contato-item-text{
-  display: flex;
-  flex-direction: column;
+
+.contact-list a {
+  color: #f39c12;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
-.contato-item img{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 20px;
+
+.experience-item a{
+color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  background-color: #f39c12;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100px;
 }
