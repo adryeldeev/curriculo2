@@ -16,5 +16,6 @@ navItems.forEach(item => {
         // Volta o ícone para hambúrguer quando o menu é fechado
         navToggle.querySelector('i').classList.remove('fa-times');
         navToggle.querySelector('i').classList.add('fa-bars');
+        
     });
 });
